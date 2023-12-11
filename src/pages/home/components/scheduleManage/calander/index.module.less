@@ -1,0 +1,131 @@
+.calendarWrapper{
+    padding:0 12px;
+
+    /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+    :global{
+        .ant-picker-calendar{
+            background: none;
+        }
+
+        .ant-picker-calendar .ant-picker-panel{
+            background: none;
+        }
+
+        
+        .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner{
+            padding: 8px;
+            box-sizing: content-box;
+        }
+
+        // .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner.index_active__G0MWk{
+        //     background: #C5DEFC;
+        //     border-radius: 4px;
+        // }
+
+        // .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::after{
+        //     position: absolute;
+        //     bottom: 4px;
+        //     left:18px;
+        //     display: block;
+        //     width: 4px;
+        //     height: 4px;
+        //     background-color: #fff;
+        //     border-radius: 50%;
+        //     content: '';
+        // }
+
+        .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+            border: none;
+        }
+
+        .ant-select-single.ant-select-sm{
+            width: 76px;
+            height: 32px;
+        }
+
+        .ant-select-single.ant-select-lg{
+            width: 100px;
+            height: 32px;
+            border-radius: 4px;
+        }
+
+        .ant-select-single.ant-select-sm .ant-select-selector{
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .ant-picker-cell-selected .ant-picker-cell .ant-picker-cell-inner.active::after{
+            position: absolute;
+            bottom: 4px;
+            left:18px;
+            display: block;
+            width: 4px;
+            height: 4px;
+            background-color: #fff ;
+            border-radius: 50%;
+            content: ''; 
+        }
+
+        .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+            color: #fff;
+            background: #0C74F4;
+        }
+
+        .ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner.active {
+            color: #fff;
+            background: #0C74F4;
+        }
+
+        
+
+      
+        
+
+       
+       
+        
+    }
+
+    
+
+    .monthSelect{
+        /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+        :global{
+            .ant-select-single.ant-select-sm{
+                width: 76px;
+            }
+        }
+    }
+
+   .today{
+        padding:2px 32px;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        background: #FFF;
+        border: 1px solid rgb(194 195 196 / 100%);
+        border-radius: 4px;
+   }
+}
+
+
+.active{
+    background: #C5DEFC;
+    border-radius: 4px;
+}
+
+  .active::after{
+      position: absolute;
+      bottom: 4px;
+      left:18px;
+      display: block;
+      width: 4px;
+      height: 4px;
+      background-color: #0C74F4 ;
+      border-radius: 50%;
+      content: ''; 
+  }
+  
+
+ 

@@ -1,0 +1,54 @@
+.advice{
+    margin: 24px 0 12px;
+
+    .adTitle{
+        margin-bottom: 12px;
+
+        img{
+            width: 18px;
+            height: 18px;
+        }
+
+        span{
+            display: inline-block;
+            margin-left: 6px;
+            font-size: 16px;
+            color: #666;
+        }
+    }
+
+    .bottom{
+        position: relative;
+        background-color: #fff;
+        
+        .auto{
+            position: absolute;
+            right: 16px;
+            bottom:16px;
+            width: 88px;
+            height: 28px;
+            font-size: 14px;
+            line-height: 28px;
+            color: #0C74F4;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid rgb(0 112 248 / 100%);
+            border-radius: 4px;
+        }
+    }
+}
+
+.formWrapper{
+    padding:24px 24px 24px 0;
+    background-color: #fff;
+
+    /* stylelint-disable-next-line selector-pseudo-class-no-unknown */
+    :global{
+        .ant-btn{
+            width: 120px;
+            height: 32px;
+            font-size: 14px;
+        }
+    }
+    
+}

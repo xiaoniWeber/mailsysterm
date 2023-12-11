@@ -1,0 +1,204 @@
+.inventoryWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 24px;
+    overflow: hidden;
+
+    .item{
+        width: 28%;
+        height: 64px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 64px;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #999;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    :nth-child(3n){
+        margin-right: 0;
+    }
+
+    .active{
+        border-color: #0C74F4;
+    }
+}
+
+.secondStep{
+    .titleWrapper{
+        overflow-x: scroll;
+
+        .title{
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 0 24px;
+
+            .item{
+                position: relative;
+                width: 134px;
+                height: 48px;
+                margin-right: 10px;
+                margin-bottom: 20px;
+                font-size: 18px;
+                line-height: 48px;
+                color: #333;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid #999;
+                border-radius: 8px;
+                box-sizing: border-box;
+            }
+
+            .active{
+              background: rgb(114 177 255 / 12%);
+              border: 2px solid #0C74F4;
+
+              &::after{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 32px;
+                height: 32px;
+                background: url("../../../../assets/images/active.png");
+                content: '';
+                background-size: 32px 32px;
+              }  
+            }
+        }
+    }
+
+   
+    
+    .table{
+        // padding: 0 24px;
+        overflow-x: scroll;
+        font-size: 14px;
+        color: #333;
+
+        .tableHeader{
+            display: flex;
+
+            .item{
+                width: 23%;
+                height: 56px;
+                min-width: 110px;
+                padding-top:9px;
+                text-align: center;
+                background: rgb(12 116 244 / 28%);
+                border-radius: 4px 4px 0 0;
+                border-right: 1px solid #eee;
+                box-sizing: border-box;
+            }
+
+            .firstItem{
+                width: 45.5px;
+                height: 56px;
+                line-height: 56px;
+                text-align: center;
+                background: rgb(12 116 244 / 28%);
+                box-sizing: border-box;
+                border-right: 1px solid #eee;
+            }
+            
+        }
+        
+        .houseWrapper{
+            overflow-y: scroll;
+
+            .firstItem{
+                width: 45.5px;
+                height: 56px;
+                line-height: 56px;
+                text-align: center;
+                box-sizing: border-box;
+                border-right: 1px solid #eee;
+                border-bottom: 1px solid #eee;
+            }
+
+            .house{
+                display: flex;
+                
+
+                .areaBox{
+                    width: 23%;
+                    height: 56px;
+                    min-width: 110px;
+                    padding:8px 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    border-right: 1px solid #eee;
+                    border-bottom: 1px solid #eee;
+                }
+
+                .areaBox.active{
+                    background: #FFDEDE;
+                }
+            }
+
+            .house:nth-child(even){
+                .firstItem{
+                    background: #FAFCFF;
+                }
+
+                .areaBox{
+                    background: #FAFCFF;
+                }
+
+                .areaBox.active{
+                    background: #FFDEDE;
+                }
+               
+            }
+
+            .house:nth-child(odd){
+                .firstItem{
+                    background: #fff;
+                }
+
+                .areaBox{
+                    background: #fff;
+                }
+
+                .areaBox.active{
+                    background: #FFDEDE;
+                }
+            }
+        }
+        
+    }
+    
+    
+}
+
+.thirdStep{
+    border:1px solid #eee;
+    border-radius: 8px;
+
+    ul{
+        padding:24px;
+        margin:0 24px;
+        background-color: #fff;
+
+        li{
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+
+            span{
+              color: #999;  
+            }
+        }
+    }
+    
+}
+
+.loading{
+    margin-top:100px;
+    text-align: center
+}
